@@ -1,0 +1,11 @@
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\bin\Debug\netcoreapp2.1\Ciutats.deps.json
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\bin\Debug\netcoreapp2.1\Ciutats.runtimeconfig.json
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\bin\Debug\netcoreapp2.1\Ciutats.runtimeconfig.dev.json
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\bin\Debug\netcoreapp2.1\Ciutats.dll
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\bin\Debug\netcoreapp2.1\Ciutats.pdb
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.csprojAssemblyReference.cache
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.AssemblyInfoInputs.cache
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.AssemblyInfo.cs
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.dll
+C:\Users\Miguel Angel\source\repos\Ciutats\Ciutats\obj\Debug\netcoreapp2.1\Ciutats.pdb
