@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ex. 3 Ciutats </title>
+
+<script>
+//Fase 1
+		var ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6;
+
+		ciutat1=prompt("Introduce la ciudad1: ");
+		ciutat2=prompt("Introduce la ciudad2: ");
+		ciutat3=prompt("Introduce la ciudad3: ");
+		ciutat4=prompt("Introduce la ciudad4: ");
+		ciutat5=prompt("Introduce la ciudad5: ");
+		ciutat6=prompt("Introduce la ciudad6: ");
+
+		document.write("Las ciudades introducidas son: "+"<br>"+ciutat1+"<br>"+ciutat2+"<br>"+ciutat3+"<br>"+ciutat4+"<br>"+ciutat5+"<br>"+ciutat6+"<br>"+" "+"<br>");
+
+ // Fase2
+            var ciutats = [ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6];
+            var ciutatsModificades = ciutats;
+
+            var compare;
+            var temp; 
+
+            // Ordenem l'array
+            for (var i=0; i < ciutats.length; i++)
+            {
+                for (var j = 0; j < 6; j++)
+                {
+                    compare = ciutatsModificades[i].localeCompare(ciutatsModificades[j]);
+                    if (compare <0)
+                    {
+                        temp = ciutatsModificades[i];
+                        ciutatsModificades[i] = ciutatsModificades[j];
+                        ciutatsModificades[j] = temp;
+                    }
+                }
+            }
+
+            //Lo mostramos por pantalla
+            for (var i=0; i < ciutatsModificades.length; i++)
+            {
+                document.write(ciutatsModificades[i]+"<br>");
+            }
+			document.write(" "+"<br>");
+			
+//Fase 3
+           var cadena;
+           
+            for (i = 0; i < ciutats.length; i++)
+            {
+                cadena = ciutats[i].split('');
+                for (j = 0; j < ciutats[i].length; j++) //recorremos el char array hasta la longitud de la ciudad actual
+                {
+                    if (cadena[j] == 'a')
+                    {
+                        cadena[j] = '4';
+                    }
+                }
+                ciutats[i] = cadena.join('');
+            }
+
+            //Volvemos a ordenar el array
+			for (i = 0; i < 6; i++)
+            {
+                for (j = 0; j < 6; j++)
+                {
+                    compare = ciutatsModificades[i].localeCompare(ciutatsModificades[j]);
+                    if (compare <0)
+                    {
+                        temp = ciutatsModificades[i];
+                        ciutatsModificades[i] = ciutatsModificades[j];
+                        ciutatsModificades[j] = temp;
+                    }
+                }
+            }
+
+            //Lo mostramos por pantalla
+            for (var i=0; i < ciutatsModificades.length; i++)
+            {
+                document.write(ciutatsModificades[i]+"<br>");
+            }
+			document.write(" "+"<br>");
+
+
+//Creamos los arrays con la longitud correspondiente a cada ciudad
+            
+			var char1 = new Array();
+            var char2 = new Array();
+            var char3 = new Array();
+            var char4 = new Array();
+            var char5 = new Array();
+            var char6 = new Array();
+			var charsCiudades= new Array(); //Lista de todas las letras de las ciudades
+			
+			var maxLong=0; //almacena la longitud de la ciudad mas larga
+			
+			for(i=0;i<ciutats.length; i++)
+            {
+                if (ciutats[i].length > maxLong) 
+				{
+					maxLong = ciutats[i].length; //Obtenemos la longitud máxima de las ciudades para inicializar el array de chars
+				}
+			}
+			
+			
+            for (var indice=0; indice< maxLong; indice++) //Se introducen los valores uno a uno 
+            {
+                if (indice < ciutat1.length)             //Limitamos los caracteres a las longitudes de cada string
+                    char1[indice] = ciutat1[indice];
+                if (indice < ciutat2.length)
+                    char2[indice] = ciutat2[indice];
+                if (indice < ciutat3.length)
+                    char3[indice] = ciutat3[indice];
+                if (indice < ciutat4.length)
+                    char4[indice] = ciutat4[indice];
+                if (indice < ciutat5.length)
+                    char5[indice] = ciutat5[indice];
+                if (indice < ciutat6.length)
+                    char6[indice] = ciutat6[indice];       
+							
+            }
+
+			//Introducimos todos los arrays de chars en la lista charsCiudades
+			charsCiudades=[char1,char2,char3,char4,char5,char6];			
+			
+            //Se muestran los chars en orden inverso
+			var indice;
+            for(i=0;i<charsCiudades.length;i++)
+			{
+				indice=charsCiudades[i].length-1;
+				cadena=charsCiudades[i];
+				for (j=indice;j>=0;j--)
+				{
+					document.write(cadena[j]);
+					
+				}
+				document.write(" "+"<br>");
+			}
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
